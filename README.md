@@ -26,7 +26,7 @@ The server stores a set of key:value pairs, making use of Ruby's hash implementa
 
 For more information on each value, visit: https://github.com/memcached/memcached/blob/master/doc/protocol.txt.
 
-The server supports a subset of Memcached's commands. Storage commands accept the following the syntax:
+The server supports a subset of Memcached's commands. Storage commands accept the following syntax:
 
     <command> <key_name> <flags> <time_to_live> <value_length> <noreply>
     cas <key_name> <flags> <time_to_live> <value_length> <cas_id> <noreply>
