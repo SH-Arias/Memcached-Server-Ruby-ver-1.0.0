@@ -30,7 +30,15 @@ end
 # Make sure every thread finishes executing
 threads.each(&:join)
 
-# Duration of the test
+operations = N_THREADS * CLIENTS * 2
+total_operations = ""
+total_operations = "" << "Sum of connection and command operations: " << operations.to_s
+num_threads = "Number of threads: " + N_THREADS.to_s
+num_clients = "Number of clients: " + CLIENTS.to_s
+# Test info
+puts num_threads
+puts num_clients
+puts total_operations.to_s
 puts "Total time: #{ (Time.now - t1)*1000 } ms"
 
 puts "done"
